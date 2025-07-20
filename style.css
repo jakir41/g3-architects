@@ -87,8 +87,26 @@
     color: grey;
     padding: 40px 0;
 }
-
-
+.some-card-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact{
+   border: 1px solid rgb(255, 144, 14);
+   width: 240px;
+   height: 240px;
+   border-radius: 10px;
+}
+.fact h4{
+    padding: 10px 0;
+}
+.display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
 
@@ -111,8 +129,13 @@
     .team-container{
         flex-direction: column;
     }
-    .img-container{
+    .img-container, .some-card-container{
         grid-template-columns: 1fr;
+    }
+    .some-card-container{
+        justify-items: center;
+        gap: 30px;
+
     }
     .team-text-container{
         text-align: center;

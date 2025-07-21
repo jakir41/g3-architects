@@ -92,6 +92,35 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+.featur-card-container{
+    display: flex;
+    gap: 130px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.feature-img img{
+    width: 100%;
+    height: 100%;
+}
+#experience-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#section-title{
+    
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+.feature-title{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.06);
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+
+
 .fact{
    border: 1px solid rgb(255, 144, 14);
    width: 240px;
@@ -107,8 +136,14 @@
     align-items: center;
     text-align: center;
 }
-
-
+.sponsor-companies{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
 
 
 
@@ -116,7 +151,7 @@
 
 
 @media screen and (max-width:576px) {
-    .navber{
+    .navber, .featur-card-container{
         flex-direction: column;
     }
     .nav-links{
@@ -139,6 +174,17 @@
     }
     .team-text-container{
         text-align: center;
+    }
+    .sponsor-companies{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+    }
+    .featur-card-container{
+        margin: 0 10px;
+    }
+    #experience-badge{
+        display: none;
     }
     
 }
